@@ -1,7 +1,0 @@
-Running: xsim.dir/tb_wb_esp_sim/xsimk.exe -runall -simmode gui -wdb tb_wb_esp_sim.wdb -simrunnum 0 -socket 64881
-Design successfully loaded
-Design Loading Memory Usage: 17856 KB (Peak: 17856 KB)
-Design Loading CPU Usage: 124 ms
-Simulation completed
-Simulation Memory Usage: 19940 KB (Peak: 19940 KB)
-Simulation CPU Usage: 327 ms

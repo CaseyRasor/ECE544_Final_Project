@@ -1,1 +1,0 @@
--debug "typical" "tb_wb_esp" -s "tb_wb_esp_sim" 

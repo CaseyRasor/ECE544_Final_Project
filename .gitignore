@@ -1,21 +1,69 @@
-# Ignore build output directory
-/build
-/export
+# =============================================================================
+#  ECE544 final project - keep only what is needed to rebuild the system.
+#
+#  Kept:
+#    hdl/, constraints/, sw/            RTL, pin constraints, drivers + apps
+#    final_project.xpr                  Vivado project (references hdl/ in place)
+#    final_project.srcs/                block design (.bd/.bda/ui) + IP .xci files
+#    mbc_wb_nexys4DDR.xsa               exported hardware (bitstream included)
+#    sim/ sources                       testbenches and run scripts
+#    <app>/src + vitis-comp.json        Vitis app config (sources come from sw/)
+#    PlatformIO/ESP32_bridge            ESP32 project (has its own .gitignore)
+# =============================================================================
 
-# Ignore object files and dependent files
-.o
-.d
+# ---- Vivado: generated output (all rebuilt from .xpr + .srcs + hdl) ---------
+/final_project.cache/
+/final_project.gen/
+/final_project.hw/
+/final_project.ip_user_files/
+/final_project.runs/
+/final_project.sim/
+/final_project.tmp/
+/.Xil/
+.Xil/
+*.jou
+*.log
+*.str
+*.backup.*
+vivado_pid*
+webtalk*
+*.wdb
+*.pb
+xsim.dir/
+.rigel_lopper/
 
-#Ignore logs folder and log files
-/logs
-.log
-
-#Ignore lock files
-.lock
-
-.bin
-.pdi
+# ---- Vitis: workspace metadata and generated platform ------------------------
+# Workspace state (recreated when the folder is opened as a Vitis workspace).
+/_ide/
 .vitisWorkspace.json
+.peers.ini
+# Platform: recreate from mbc_wb_nexys4DDR.xsa, named "lcd_platform".
+/lcd_platform/
+# Application build output and generated files.
+*_standalone/build/
+*_standalone/export/
+*_standalone/_ide/bitstream/
+*_standalone/_ide/hwspec.checksum
+*_standalone/_ide/.wsdata/
+*_standalone/_ide/logs/
+compile_commands.json
+.compile_commands/
+.clangd
+*.o
+*.d
+*.elf
+*.bin
+*.pdi
+*.lock
+logs/
 
-_ide/logs
-_ide/.wsdata
+# ---- Editors -----------------------------------------------------------------
+/.vscode/
+.vs/
+*.swp
+*~
+
+# ---- OS ----------------------------------------------------------------------
+Thumbs.db
+desktop.ini
+.DS_Store
