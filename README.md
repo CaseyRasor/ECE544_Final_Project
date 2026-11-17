@@ -36,7 +36,6 @@ A MicroBlaze system on a **Nexys A7-100T** with custom Wishbone peripherals:
 | `sw/mbc_wb_drivers/` | C drivers: `MBWB_HW.h` (address map, register bits), `MBWB_LCD`, `MBWB_ESP`, `MBWB_BIO`, `MBWB_SSEG` |
 | `sw/apps/` | Test applications: `test_mbwb_lcd.c`, `test_mbwb_esp.c` |
 | `sw/tools/make_lcd_font.py` | Generates `MBWB_LCD_font.c` |
-| `lcd_test_standalone/`, `esp_test_standalone/` | Vitis application components. Sources come from `../../sw/` through `src/UserConfig.cmake`. |
 | `sim/` | xsim testbenches. `run_sim.bat` runs the full Wishbone system; `esp/run_sim_esp.bat` runs `wb_esp` with an ESP32 model. |
 | `PlatformIO/ESP32_bridge/` | ESP32-S3 firmware (ESP-IDF): bridges the USB serial console (UART0) to the FPGA (UART1) |
 
@@ -95,12 +94,18 @@ The LCD's MISO pin is not connected.
 You can skip this step if you're only writing software: the committed `.xsa` is up to date.
 
 ### 2. MicroBlaze software (Vitis)
-1. Open this folder as a Vitis workspace.
-2. Create a platform named **`lcd_platform`** from `mbc_wb_nexys4DDR.xsa` (standalone, `microblaze_0`). The application components refer to it by that name.
-3. Build `lcd_test_standalone` or `esp_test_standalone`.
-4. Program the FPGA, then run the application. Output appears on the Nexys A7's USB-UART at 115200 baud.
+Platforms and applications aren't in the repo; create them from the sources:
 
-`esp_test_standalone` runs a loopback self-test first, then enters link mode. In link mode it prints each line it receives from the ESP32 and sends back `FPGA got n bytes: ...`.
+1. Open this folder (or any folder) as a Vitis workspace.
+2. Create a platform from `mbc_wb_nexys4DDR.xsa` (standalone OS, `microblaze_0`).
+3. Create an *Empty Application* on that platform. In its `src/UserConfig.cmake`, add:
+   - include directory: `sw/mbc_wb_drivers/include`
+   - sources: everything in `sw/mbc_wb_drivers/source/` plus one app from `sw/apps/`
+
+   The default stack and heap sizes are enough.
+4. Build, program the FPGA, and run. Output appears on the Nexys A7's USB-UART at 115200 baud.
+
+`test_mbwb_esp.c` runs a loopback self-test first, then enters link mode. In link mode it prints each line it receives from the ESP32 and sends back `FPGA got n bytes: ...`.
 
 ### 3. ESP32-S3 firmware (PlatformIO)
 1. Open `PlatformIO/ESP32_bridge` in VS Code.

@@ -7,7 +7,6 @@
 #    final_project.srcs/                block design (.bd/.bda/ui) + IP .xci files
 #    mbc_wb_nexys4DDR.xsa               exported hardware (bitstream included)
 #    sim/ sources                       testbenches and run scripts
-#    <app>/src + vitis-comp.json        Vitis app config (sources come from sw/)
 #    PlatformIO/ESP32_bridge            ESP32 project (has its own .gitignore)
 # =============================================================================
 
@@ -37,15 +36,10 @@ xsim.dir/
 /_ide/
 .vitisWorkspace.json
 .peers.ini
-# Platform: recreate from mbc_wb_nexys4DDR.xsa, named "lcd_platform".
+# Platform: recreate from mbc_wb_nexys4DDR.xsa.
 /lcd_platform/
-# Application build output and generated files.
-*_standalone/build/
-*_standalone/export/
-*_standalone/_ide/bitstream/
-*_standalone/_ide/hwspec.checksum
-*_standalone/_ide/.wsdata/
-*_standalone/_ide/logs/
+# Application components: create your own and add the sources from sw/.
+/*_standalone/
 compile_commands.json
 .compile_commands/
 .clangd

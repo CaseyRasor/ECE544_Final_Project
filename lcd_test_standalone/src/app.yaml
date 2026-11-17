@@ -1,4 +1,0 @@
-domain_path: C:/Users/casey/Vivado/final_project/lcd_platform/export/lcd_platform/sw/standalone_microblaze_0
-app_src_dir: C:\AMDDesignTools\2026.1\Vitis\data\embeddedsw\lib\sw_apps\empty_application
-template: empty_application
-lang: c
