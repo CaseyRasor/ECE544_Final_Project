@@ -180,7 +180,7 @@
 			#interrupt-cells = <2>;
 			xlnx,sense-of-irq-edge-type = "Rising";
 			xlnx,edk-special = "INTR_CTRL";
-			xlnx,kind-of-intr = <0x1c>;
+			xlnx,kind-of-intr = <0x3c>;
 			xlnx,kind-of-edge = <0xffffffff>;
 			xlnx,irq-is-level = <1>;
 			xlnx,has-ivr = <1>;
@@ -197,7 +197,7 @@
 			xlnx,s-axi-aclk-freq-mhz = <100>;
 			xlnx,num-sw-intr = <0>;
 			xlnx,irq-connection = <0>;
-			xlnx,num-intr-inputs = <0x5>;
+			xlnx,num-intr-inputs = <0x6>;
 			xlnx,has-sie = <1>;
 			xlnx,enable-async = <0>;
 			xlnx,has-cie = <1>;
@@ -321,7 +321,7 @@
 			xlnx,ip-name = "axlite2wbsp";
 			xlnx,f-maxdelay = <3>;
 			xlnx,edk-iptype = "PERIPHERAL";
-			reg = <0x80000000 0x40000>;
+			reg = <0x80000000 0x80000>;
 			xlnx,f-maxstall = <3>;
 			xlnx,name = "axlite2wbsp_0";
 		};

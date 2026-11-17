@@ -342,7 +342,7 @@
             "V11": {
                 "VT": "AC",
                 "BA": "0x80000000",
-                "HA": "0x8003FFFF",
+                "HA": "0x8007FFFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
                 "MA": "Data",

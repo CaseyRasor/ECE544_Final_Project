@@ -37,7 +37,7 @@
 			      <0x41400000 &mdm_1 0x41400000 0x1000>, 
 			      <0x41c00000 &axi_timer_0 0x41c00000 0x10000>, 
 			      <0x41c10000 &axi_timer_1 0x41c10000 0x10000>, 
-			      <0x80000000 &axlite2wbsp_0 0x80000000 0x40000>;
+			      <0x80000000 &axlite2wbsp_0 0x80000000 0x80000>;
 		#ranges-address-cells = <0x1>;
 		#ranges-size-cells = <0x1>;
 	};
