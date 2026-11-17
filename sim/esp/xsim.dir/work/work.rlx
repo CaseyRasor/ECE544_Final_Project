@@ -1,9 +1,0 @@
-0.7
-2020.2
-Jun 16 2026
-11:10:11
-C:/Users/casey/Vivado/final_project/hdl/esp/esp_uart_rx.sv,1794942059,systemVerilog,,C:/Users/casey/Vivado/final_project/hdl/esp/esp_uart_tx.sv,,esp_uart_rx,,,,,,,,
-C:/Users/casey/Vivado/final_project/hdl/esp/esp_uart_tx.sv,1794942060,systemVerilog,,C:/Users/casey/Vivado/final_project/hdl/esp/wb_esp.sv,,esp_uart_tx,,,,,,,,
-C:/Users/casey/Vivado/final_project/hdl/esp/wb_esp.sv,1794942123,systemVerilog,,C:/Users/casey/Vivado/final_project/sim/esp/tb_wb_esp.sv,,wb_esp,,,,,,,,
-C:/Users/casey/Vivado/final_project/hdl/lcd/lcd_fifo.sv,1794888993,systemVerilog,,C:/Users/casey/Vivado/final_project/hdl/esp/esp_uart_rx.sv,,lcd_fifo,,,,,,,,
-C:/Users/casey/Vivado/final_project/sim/esp/tb_wb_esp.sv,1794942217,systemVerilog,,,,tb_wb_esp,,,,,,,,
