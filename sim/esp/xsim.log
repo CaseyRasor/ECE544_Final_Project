@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Nov 17 11:03:41 2026
+# Process ID         : 35596
+# Current directory  : C:/Users/casey/Vivado/final_project/sim/esp
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/tb_wb_esp_sim/xsim_script.tcl}
+# Log file           : C:/Users/casey/Vivado/final_project/sim/esp/xsim.log
+# Journal file       : C:/Users/casey/Vivado/final_project/sim/esp\xsim.jou
+# Running On         : Casey_Desktop
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz
+# CPU Frequency      : 3600 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 34157 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36304 MB
+# Available Virtual  : 9940 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_wb_esp_sim/xsim_script.tcl
+# xsim {tb_wb_esp_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+[435000] 1. reset values done
+[41275000] 3. transmit done
+[66575000] 4. receive done
+[91815000] 5. RXDATA32 done
+[149775000] 6. RX interrupt done
+[170495000] 7. TX interrupt done
+[192265000] 8. loopback done
+[962315000] 9. RX flow control done
+[993095000] 10. TX flow control done
+[1244655000] 11. TX backpressure done (max ack wait 500 cycles)
+[1594845000] 12. overrun done
+[1606005000] 13. framing error done
+[1621515000] 14. TX flush done
+*** TEST PASSED ***
+$finish called at time : 1621515 ns : File "C:/Users/casey/Vivado/final_project/sim/esp/tb_wb_esp.sv" Line 338
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Nov 17 11:03:43 2026...

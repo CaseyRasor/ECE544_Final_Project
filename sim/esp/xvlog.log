@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/casey/Vivado/final_project/hdl/lcd/lcd_fifo.sv" into library work
+INFO: [VRFC 10-311] analyzing module lcd_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/casey/Vivado/final_project/hdl/esp/esp_uart_rx.sv" into library work
+INFO: [VRFC 10-311] analyzing module esp_uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/casey/Vivado/final_project/hdl/esp/esp_uart_tx.sv" into library work
+INFO: [VRFC 10-311] analyzing module esp_uart_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/casey/Vivado/final_project/hdl/esp/wb_esp.sv" into library work
+INFO: [VRFC 10-311] analyzing module wb_esp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/casey/Vivado/final_project/sim/esp/tb_wb_esp.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_wb_esp

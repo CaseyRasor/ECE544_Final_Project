@@ -1,0 +1,359 @@
+
+*** Running vivado
+    with args -log mbc_wb_embsys_microblaze_0_axi_periph_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mbc_wb_embsys_microblaze_0_axi_periph_0.tcl
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 06-oct-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Nov 17 11:20:46 2026
+# Process ID         : 15912
+# Current directory  : C:/Users/casey/Vivado/final_project/final_project.runs/mbc_wb_embsys_microblaze_0_axi_periph_0_synth_1
+# Command line       : vivado.exe -log mbc_wb_embsys_microblaze_0_axi_periph_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mbc_wb_embsys_microblaze_0_axi_periph_0.tcl
+# Log file           : C:/Users/casey/Vivado/final_project/final_project.runs/mbc_wb_embsys_microblaze_0_axi_periph_0_synth_1/mbc_wb_embsys_microblaze_0_axi_periph_0.vds
+# Journal file       : C:/Users/casey/Vivado/final_project/final_project.runs/mbc_wb_embsys_microblaze_0_axi_periph_0_synth_1\vivado.jou
+# Running On         : Casey_Desktop
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz
+# CPU Frequency      : 3600 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 34157 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36304 MB
+# Available Virtual  : 9331 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Tue Nov 17 11:20:46 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source mbc_wb_embsys_microblaze_0_axi_periph_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 582.457 ; gain = 266.594
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/casey/OneDrive/Desktop/ECE544/mbc_wb-v2.0.0/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+Command: synth_design -top mbc_wb_embsys_microblaze_0_axi_periph_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 31292
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1407.145 ; gain = 576.785
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mbc_wb_embsys_microblaze_0_axi_periph_0' [c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_axi_periph_0/synth/mbc_wb_embsys_microblaze_0_axi_periph_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_84d2' [c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_axi_periph_0/bd_0/synth/bd_84d2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_84d2_sc_ul_0' [c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_axi_periph_0/bd_0/ip/ip_0/synth/bd_84d2_sc_ul_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'bd_84d2_sc_ul_0' (0#1) [c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_axi_periph_0/bd_0/ip/ip_0/synth/bd_84d2_sc_ul_0.sv:53]
+WARNING: [Synth 8-7071] port 'aresetn_out' of module 'bd_84d2_sc_ul_0' is unconnected for instance 'sc_ul' [c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_axi_periph_0/bd_0/synth/bd_84d2.v:476]
+WARNING: [Synth 8-7071] port 'pc_asserted' of module 'bd_84d2_sc_ul_0' is unconnected for instance 'sc_ul' [c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_axi_periph_0/bd_0/synth/bd_84d2.v:476]
+WARNING: [Synth 8-7071] port 'pc_status' of module 'bd_84d2_sc_ul_0' is unconnected for instance 'sc_ul' [c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_axi_periph_0/bd_0/synth/bd_84d2.v:476]
+WARNING: [Synth 8-7023] instance 'sc_ul' of module 'bd_84d2_sc_ul_0' has 157 connections declared, but only 154 given [c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_axi_periph_0/bd_0/synth/bd_84d2.v:476]
+INFO: [Synth 8-6155] done synthesizing module 'bd_84d2' (0#1) [c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_axi_periph_0/bd_0/synth/bd_84d2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'mbc_wb_embsys_microblaze_0_axi_periph_0' (0#1) [c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_axi_periph_0/synth/mbc_wb_embsys_microblaze_0_axi_periph_0.v:53]
+INFO: [Synth 8-7129] Port din[8191] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8190] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8189] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8188] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8187] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8186] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8185] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8184] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8183] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8182] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8181] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8180] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8179] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8178] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8177] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8176] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8175] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8174] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8173] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8172] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8171] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8170] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8169] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8168] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8167] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8166] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8165] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8164] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8163] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8162] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8161] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8160] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8159] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8158] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8157] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8156] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8155] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8154] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8153] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8152] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8151] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8150] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8149] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8148] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8147] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8146] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8145] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8144] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8143] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8142] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8141] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8140] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8139] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8138] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8137] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8136] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8135] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8134] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8133] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8132] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8131] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8130] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8129] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8128] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8127] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8126] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8125] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8124] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8123] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8122] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8121] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8120] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8119] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8118] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8117] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8116] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8115] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8114] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8113] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8112] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8111] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8110] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8109] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8108] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8107] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8106] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8105] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8104] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8103] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8102] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8101] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8100] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8099] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8098] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8097] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8096] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8095] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8094] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8093] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port din[8092] in module sc_ultralite_v1_0_1_mux_hot__parameterized0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1607.867 ; gain = 777.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1607.867 ; gain = 777.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1607.867 ; gain = 777.508
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.304 . Memory (MB): peak = 1607.867 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_axi_periph_0/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_axi_periph_0/ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_axi_periph_0/bd_0/ip/ip_0/bd_84d2_sc_ul_0_cdc.xdc] for cell 'inst/sc_ul/inst'
+Finished Parsing XDC File [c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_axi_periph_0/bd_0/ip/ip_0/bd_84d2_sc_ul_0_cdc.xdc] for cell 'inst/sc_ul/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_axi_periph_0/bd_0/ip/ip_0/bd_84d2_sc_ul_0_cdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mbc_wb_embsys_microblaze_0_axi_periph_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mbc_wb_embsys_microblaze_0_axi_periph_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_axi_periph_0/smartconnect.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_axi_periph_0/smartconnect.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/casey/Vivado/final_project/final_project.runs/mbc_wb_embsys_microblaze_0_axi_periph_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/casey/Vivado/final_project/final_project.runs/mbc_wb_embsys_microblaze_0_axi_periph_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1683.605 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1687.730 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1687.730 ; gain = 857.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1687.730 ; gain = 857.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1687.730 ; gain = 857.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1687.730 ; gain = 857.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1733.820 ; gain = 903.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1803.488 ; gain = 973.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1839.812 ; gain = 1009.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1851.805 ; gain = 1021.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2097.602 ; gain = 1267.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2097.602 ; gain = 1267.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2097.602 ; gain = 1267.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2097.602 ; gain = 1267.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2097.602 ; gain = 1267.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2097.602 ; gain = 1267.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |    15|
+|3     |LUT3 |    13|
+|4     |LUT4 |    22|
+|5     |LUT5 |    13|
+|6     |LUT6 |   146|
+|7     |FDRE |    70|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2097.602 ; gain = 1267.242
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 2097.602 ; gain = 1187.379
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 2097.602 ; gain = 1267.242
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2106.805 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2110.457 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 645c5292
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+128 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 2110.496 ; gain = 1491.691
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2110.496 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/casey/Vivado/final_project/final_project.runs/mbc_wb_embsys_microblaze_0_axi_periph_0_synth_1/mbc_wb_embsys_microblaze_0_axi_periph_0.dcp' has been generated.
+INFO: [Ipptcl 7-1612] Added synthesis output to IP cache for IP mbc_wb_embsys_microblaze_0_axi_periph_0, cache-ID = 7ad876e5a4d36f93
+INFO: [Coretcl 2-1174] Renamed 8 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2110.496 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/casey/Vivado/final_project/final_project.runs/mbc_wb_embsys_microblaze_0_axi_periph_0_synth_1/mbc_wb_embsys_microblaze_0_axi_periph_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file mbc_wb_embsys_microblaze_0_axi_periph_0_utilization_synth.rpt -pb mbc_wb_embsys_microblaze_0_axi_periph_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 17 11:21:59 2026...

@@ -1,0 +1,16 @@
+// Mem file initialization records.
+//
+// SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+// Vivado v2026.1 (64-bit)
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+// Created on Tuesday November 17, 2026 - 08:46:11 am, from:
+//
+//     Map file     - c:\Users\casey\Vivado\final_project\final_project.gen\sources_1\bd\mbc_wb_embsys\mbc_wb_embsys.bmm
+//     Data file(s) - c:/Users/casey/Vivado/final_project/final_project.gen/sources_1/bd/mbc_wb_embsys/ip/mbc_wb_embsys_microblaze_0_0/data/mb_bootloop_le.elf
+//
+// Address space 'u_embsys_microblaze_0.u_embsys_microblaze_0_local_memory_lmb_bram_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000
