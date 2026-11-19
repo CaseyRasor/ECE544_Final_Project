@@ -81,5 +81,5 @@
 | Week of 23-Nov | SPI image link: test image from the ESP32 shown on the LCD. CNN trained and quantized, with a C reference model. FreeRTOS application. |
 | Fri 04-Dec | Wi-Fi upload → LCD end to end. Software CNN on MicroBlaze. Accelerator passing simulation. |
 | Week of 07-Dec | Accelerator working on hardware. Result returned to the web page. Hardware on proto board. |
-| Wed 09-Dec | /. |
+| Wed 09-Dec | Demo. |
 | Thu 10-Dec | Deliverables submitted. |
